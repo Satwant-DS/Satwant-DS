@@ -12,6 +12,17 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <style>
+        img.rounded {
+        border-radius: 50%;
+        }
+        img.square {
+        width : 300px;
+        height : 300px;
+        }
+
+    </style>
+ 
 </head>
 
 <body>
@@ -39,18 +50,27 @@
             <li>
                 <a href="#skills">Skills</a>
             </li>
+	    <li>
+		 <a href="#blog">Blog</a>
+	    </li>
+            <!--
             <li>
                 <a href="#contact">Contact</a>
             </li>
+            -->
+	    
         </ul>
     </header>
     <!-- End header -->
 
     <div id="lead">
         <div id="lead-content">
-            <h1>Ryan Fitzgerald</h1>
-            <h2>Software Engineer</h2>
-            <a href="#" class="btn-rounded-white">Download Resume</a>
+            <p><img src="images/image_profile.jpg" class = "rounded" alt="Headshot photo" height="220" width = "220"></p>
+            <h1>RIJUL VOHRA</h1>
+            <h2>Graduate Student | USC Viterbi School of Engineering | Researcher @ Information Sciences Institute</h2>
+	    <!--<h3>“HIDING WITHIN MOUNDS OF DATA IS KNOWLEDGE THAT COULD CHANGE THE LIFE OF A PATIENT, OR CHANGE THE WORLD”</h3>-->
+        <!--<a href="https://raw.githubusercontent.com/rijulvohra/rijulvohra/master/resume/resume_latest(Rijul_Vohra).pdf.zip" class="btn-rounded-white">Download Resume</a>-->
+            <a href="https://raw.githubusercontent.com/rijulvohra/rijulvohra/master/resume/resume_Rijul_Vohra.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -64,102 +84,325 @@
         <!-- End #lead-down -->
     </div>
     <!-- End #lead -->
-
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <h2 class="heading">About Me</h2>
+
                 </div>
                 <div class="col-md-8">
+
+		            <p>
+			             Hi, I am Rijul, presently pursuing my Masters in Data Science at the University of Southern California.
+                         I am a huge fan of making computers learn complex tasks. My interests range from machine learning, Natural Language Processing, and
+                         creating a knowledge base through information retrieval, entity resolution.
+		            </p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+                        I would be happy to connect with you to talk about Machine Learning, Deep Learning, Natural Language Processing, Knowledge Graphs or AI in general.
                     </p>
+
+                    <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/rijulvohra?tab=repositories" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="https://linkedin.com/in/rijul-vohra-367764126" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+
+                        <li>
+
+                            <a href="https://twitter.com/vohra_rijul?s=09" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+                        </li>
+
+                    </ul>
+                </div>
+
                 </div>
             </div>
         </div>
     </div>
+
+    
+    
+		
+                
     <!-- End #about -->
 
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
+            <div data-date="August 2020 - Present">
+                <h3>USC Information Sciences Institute</h3>
+                <h4>Graduate Research Assistant - <i>Mentor: Prof. Pedro Szekely</i></h4>
+                <h5>Technology Stack Used: Python, RDFLib, WikiData, RDF, RxNorm, Jupyter, AWS EC2, S3, Git,
+                    Docker, Flask, Pytorch, ElasticSearch, Kibana</h5>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                    <strong>Table Linker:</strong> Entity Linking System for linking tables to Wikidata
+                </p>
+                <p>
+                    1. Developed algorithm for candidate generation for entities in a table.
+                    Improved recall from <strong>0.905</strong> to <strong>0.986</strong>
+                </p>
+                <p>
+                    2. Trained and tuned Pairwise Contrastive Loss Neural Network for Candidate Ranking
+                </p>
+                <p>
+                    3. Achieved top 1 score of 0.902 on T2DV2 tables and 0.87 on Semtab Round 4 tables
+                </p>
+                <br>
+                
+                <p>
+                    <strong>Harmonize:</strong>
+                </p>
+                <p>
+                    1. Worked on creating a linked data source for Drugs using Wikidata and RxNorm
+                </p>
+                <p>
+                    2. Developed a pipeline to generate RDF triples and load them to Blazegraph, containerized application
+                    using Docker
+                </p>
+                <p>
+                    3. Indexed entities of the drug subgraph using ElasticSearch, and used it for string search based on
+                    exact match and fuzzy match
+                </p>
+                <p>
+                    4. Indexed <strong>92 million</strong> data items from wikidata, wikipedia using Elasticsearch
+                </p>
+                <p>
+                    5. Contributed to open source projects: <a href="https://github.com/usc-isi-i2/kgtk">KGTK</a> and <a href="https://github.com/usc-isi-i2/table-linker">table-linker</a>
+                </p>
+
+            </div>
+            <div data-date="June 2020 - August 2020">
+                <h3>Novartis Corporation</h3>
+                <h4>Data Science Intern at Data Strategy Team</h4>
+                <h5>Technology Stack Used: Python, RDFLib, WikiData, Scrapy, BeautifulSoup, RDF, Wikibase, Jupyter,
+                    AWS EC2, S3, Git, Docker, Flask</h5>
+                <p>
+                    <strong>FAIRification of Data:</strong>
+                </p>
+                <p>
+                    1. Cleaned dirty transaction data by developing Linked Master Data Management
+                    using Wikibase infrastructure.
+
+                </p>
+                <p>
+                    2. Optimized reconciliation using OpenRefine. Achieved speedup by <strong>50%</strong>.
+                </p>
+                <p>
+                    3. Achieved an overall precision of <strong>85%</strong> on linking parsed entities to Q nodes in Wikidata
+                    using Wikidata-Wikifier
+                </p>
+                <p>
+                    4. Streamlined reconciliation process for data curators by integrating Wikidata-Wikifier backend with
+                    OpenRefine UI.
+                </p>
+                <p>
+                    5. Devised pipeline to validate shape of new entities that are added to Wikibase allowing manual curation.
+                </p>
+            </div>
+	    <div data-date="November 2019 - June 2020">
+                <h3>Marshall School of Business</h3>
+                <h4>Graduate Researcher</h4>
+                <h5>Technology Stack Used: Python, Scrapy, BeautifulSoup, Spacy, FLAIR NLP, Snorkel, Jupyter, Git</h5>
+            <p>
+                <strong>Business Open Knowledge Network:</strong>
+            </p>
+            <p>
+                1. Developed broad crawler to crawl <strong>100,000</strong> company’s webpage extracting information about Mergers and
+                Acquisition.
+            </p>
+            <p>
+                2. Achieved recall of <strong>69%</strong> on extracting names of target and acquirer companies.
+            </p>
+            <p>
+                3. Extracted customer relations from Capital IQ database for 20 years(2000 - 2020) using Snorkel.
+                Achieved an F1 score of <strong>68.1%</strong>
+            </p>
+
+            </div>
+	    <div data-date="January 2019 - June 2019">
+                <h3>Moscow Institute of Physics and Technology</h3>
+                <h4>Machine Learning Intern</h4>
+            <h5>Technology Stack Used: Python, Machine Learning(Random Forests, Gradient Boosting Machines, Neural Networks) </h5>
+                <p>
+                    Worked on project to predict the wheat yield in 5 states of the United States.
+		</p>
+		<p>
+		    1. Data Collection: Collected Tabular data, independent variables were mostly weather parameters and dependent variable was yield. Dataset collected was for counties in 5 states of the United States.
+		    </p>
+		    <p>
+		    2. Data Exploration: Got insight of data using python libraries - pandas, matplotlib.
+		    </p>
+		    <p>
+		    3. Feature Engineering: Engineered new features based on insights gained from data exploration step. Fabricated
+		       new features using statistical techniques.
+		    </p>
+		    <p>
+		    4. Model Building: Established and compared performance of Machine Learning models - Random Forest Regressor, 
+		       Gradient Boosting Regressor and Artificial Neural Network. GBM gave best performance.
                 </p>
             </div>
 
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
 
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
+            
+            
         </div>
     </div>
     <!-- End #experience -->
 
     <div id="education">
         <h2 class="heading">Education</h2>
+	<div class="education-block">
+            <h3>University of Southern California, Los Angeles</h3>
+            <span class="education-date">August 2019 - Present</span>
+            <h4>Graduate Student at Viterbi School of Engineering</h4>
+            <ul>
+		    <li>
+                            MS in Applied Data Science
+		    </li>
+		    <li>
+			    GPA : 3.88
+		    </li>
+		    <li>
+			    Relevant Coursework : Machine Learning for Data Science, Foundations of Data Management, Natural Language Processing,
+			    Building Knowledge Graphs, Analysis of Algorithms, Foundations and Applications of Data Mining, Probability and
+                Statistics for Data Science
+		    </li>
+		   
+            </ul>
+	    
+		
+        </div>
+        <!-- End .education-block -->
         <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-            </p>
+            <h3>Thapar Institute of Engineering and Technology</h3>
+            <span class="education-date">August 2015 - June 2019</span>
+            <h4>Bachelor of Engineering in Electronics and Communication</h4>
+            <ul>
+		    <li>
+                            B.E. in Electronics and Communication
+		    </li>
+		    <li>
+			    CGPA : 9.52
+		    </li>
+            </ul>
+	    
+		
         </div>
         <!-- End .education-block -->
 
-        <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-            </ul>
-        </div>
-        <!-- End .education-block -->
+        
     </div>
     <!-- End #education -->
-
     <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
+        <h2 class="heading">My Work</h2>
         <div class="container">
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/games_kg.jpeg" class = 'square'/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>Knowledge Graph for Video Games</h3>
+                        <h5>Technology Stack Used: Python, Apache Jena Fuseki, RDFlib, Scrapy, BeautifulSoup, RDF,
+                        fastText, rltk (Entity Linking), Javascript, HTML</h5>
+                        <!--<ul>
+                            <li style="font-size:15px">Built a Knowledge Graph for Video Games and the System Requirements.</li>
+                            <li>Designed a scoring function to do entity linking between Games extracted from different data sources.</li>
+                            <li>Also worked on recommending games to the user based on not only the games the user likes
+                            but also based on what the user can actually run on his system. Used fastText word vectors
+                            for the recommendation systems.</li>
+                            <li>The KG also links the online platform where the game can be found for the cheapest price.</li>
+                        </ul>-->
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            1. Built a Knowledge Graph for Video Games and the System Requirements.
+                            <br>
+                            2. Designed a scoring function to do entity linking between Games extracted from different data sources.
+                            <br>
+                            3. Also worked on recommending games to the user based on not only the games the user likes
+                            but also based on what the user can actually run on his system. Used fastText word vectors
+                            for the recommendation systems.
+                            <br>
+                            4. The KG also links the online platform where the game can be found for the cheapest price.
                         </p>
-                        <a href="#">View Project</a>
+                        <!--<p>
+                            2. Designed a scoring function to do entity linking between Games extracted from different data sources.
+                        </p>
+                        <p>
+                            3. Also worked on recommending games to the user based on not only the games the user likes
+                            but also based on what the user can actually run on his system. Used fastText word vectors
+                            for the recommendation systems.
+                        </p>
+                        <p>
+                            4. The KG also links the online platform where the game can be found for the cheapest price.}
+                        </p> -->
+
+                        <a href="https://github.com/rijulvohra/Game-and-Requirements-KG">View Project</a>
+                        <a href="https://www.youtube.com/watch?v=wa_C4xqBmjo"> Demo on youtube </a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/machine-translation-robot.jpeg" class = 'square'/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Machine Translation using Seq2Seq Models</h3>
+                        <h5>Technology Stack Used: Python, Pytorch, TorchText, Jupyter, Git </h5>
+                        <p>
+                            1. This is a self learning task to learn and implement different architectures of Seq2Seq model used for Machine Translation
+                            <br>
+                            2. The machine translation task worked on was to convert text in German language to English
+                            <br>
+                            3. Till now, I have experimented with <strong>vanilla Seq2Seq model</strong> using LSTM, implemented
+                            <strong> Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation</strong> and <strong>
+                            used <strong>Attention</strong> for the task
+                        </p>
+                        <a href="https://github.com/rijulvohra/nlp_experiments">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/help_robots_navigate.jpeg" class = 'square'/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Help Robots Navigate</h3>
+                        <h5>Technology Stack Used: Python, Machine Learning(Random Forest, Gradient Boosting Machine), Kaggle, Jupyter </h5>
+                        <p>
+                            1. This was a Kaggle Competition namely Career Con 2019. It involved prdicting the surface on which the robot is standing.
+                            <br>
+                            2. The link for the competition is: https://www.kaggle.com/c/career-con-2019/overview.
+                            <br>
+                            3. You can also read more about the project <a href="https://medium.com/@rijulvohra/help-robots-navigate-a37b8a3323aa?source=friends_link&sk=d47de428de814b0f043ded673cdbf376">here</a>: .
+                        </p>
+                        <a href="https://github.com/rijulvohra/Help-Robots-Navigate">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/snorkel_relation_extraction_thumbnail(imdb).jpeg" class = 'square'/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Relation Extraction using Snorkel</h3>
+                        <p>
+                            This work involves extracting the educational institutions where an actor completed his/her education.
+                            The corpus used for this relation extraction task is the crawled biography of cast from IMDB.
+                        </p>
+                        <a href="https://github.com/rijulvohra/Snorkel_relation_extraction">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -167,57 +410,144 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/web_crawling.png" class = 'square'/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>Web Crawling from IMDB</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            This work crawls information about movies from the IMDB site. The crawler is written using Scrapy in Python
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="https://github.com/rijulvohra/Web-Crawling-IMDB-">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
+
+                </div>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/latest_task.png" class = 'square'/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Entity Resolution and Knowledge Representation</h3>
+                        <p>
+                            This task involves entity resolution of movies from the IMDB database and AFI database. It creates a node for each movie in
+                            IMDB and adds properties for the same movie from the AFI database.
+                        </p>
+                        <p>
+                            This task also involves creating RDF triples for the resulting dataset.
+                        </p>
+                        <a href="https://github.com/rijulvohra/Entity-Resolution-">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
             </div>
         </div>
     </div>
     <!-- End #projects -->
+    
 
     <div id="skills">
         <h2 class="heading">Skills</h2>
         <ul>
-            <li>JavaScript</li>
             <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
             <li>C++</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
+	    <li>SQL</li>
+	    <li>Firebase</li>
+            <li>Blazegraph</li>
+            <li>ElasticSearch</li>
+	    <li>MySQL</li>
+	    <li>kNN</li>
+		<li>Linear Regression</li>
+		<li>Logistic Regression</li>
+		<li>Decision Trees</li>
+		<li>Random Forests</li>
+		<li>Boosting</li>
+		<li>SVM</li>
+		<li>k-Means</li>
+		<li>Hierarchical Clustering</li>
+		<li>Artificial Neural Networks</li>
+		<li>Convolutional Neural Networks</li>
+		<li>Pytorch</li>
+		<li>Scikit-learn</li>
+		<li>Numpy</li>
+		<li>Matplotlib</li>
+		<li>nltk</li>
+		<li>Pandas</li>
+		<li>Seaborn</li>
+		<li>SciPy</li>
+		<li>gensim</li>
+		<li>XgBoost</li>
+		<li>scrapy</li>
+		<li>Spacy</li>
+            <li>Spark</li>
+            <li>Snorkel</li>
+		<li>Hypothesis Testing</li>
+            <li>Natural Language Processing</li>
+            <li>Word Embeddings</li>
+            <li>Recurrent Neural Networks</li>
+            <li>LSTM</li>
+            <li>Knowledge Graphs</li>
+            <li>Entity linking</li>
+            <li>SPARQL</li>
+            <li>RDF</li>
+            <li>Data Structures and Algorithms</li>
+            <li>AWS EC2</li>
+            <li>AWS S3</li>
+            <li>Linux</li>
+            <li>Git</li>
+            <li>Jenkins</li>
+
         </ul>
     </div>
     <!-- End #skills -->
+    <div id="blog" class="background-alt">
+        <h2 class="heading">Blog</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+		   <div class="project-image">
+                        <img src="images/help_robots_navigate.jpeg" class = 'square' />
+                    </div>
+                    
+                    
+                    <div class="project-info">
+                        <h3>Help Robots Navigate</h3>
+                        <p>
+                            This was a Kaggle Competition. Although I could not participate in the competition while it was running but I worked out on the problem later. The problem is multi-classification problem wherein we have to predict the surface on which the robot is standing.
+                        </p>
+                        <a href="https://medium.com/@rijulvohra/help-robots-navigate-a37b8a3323aa">View Blog</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+		<!-- End .project -->
+	    </div>
+            <div class="row">
+                <div class="project shadow-large">
+		   <div class="project-image">
+                        <img src="images/cnn_blog.jpg" class = 'square' />
+                    </div>
 
+
+                    <div class="project-info">
+                        <h3>Convolutional Neural Networks</h3>
+                        <p>
+                            This blog aims at explaining everything about convolutionl neural networks. Have fun reading it and do let me know if you have any comments.
+                        </p>
+                        <a href="https://medium.com/datadriveninvestor/convolutional-neural-networks-3b241a5da51e">View Blog</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+		<!-- End .project -->
+	    </div>
+	 </div>
+     </div>
+     <!-- End #blog -->
+<!--
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
@@ -230,14 +560,16 @@
         </div>
         <!-- End #contact-form -->
     </div>
+
     <!-- End #contact -->
+    -->
 
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2020 YOUR NAME
+                        Copyright &copy; 2019 RIJUL VOHRA
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -245,19 +577,18 @@
                         <i class="fa fa-chevron-up" aria-hidden="true"></i>
                     </span>
                 </div>
+                <!--
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/rijulvohra?tab=repositories" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://linkedin.com/in/rijul-vohra-367764126" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/rijul.vohra.7" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                         </li>
                         <li>
                             <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -267,6 +598,7 @@
                         </li>
                     </ul>
                 </div>
+                -->
             </div>
         </div>
     </footer>
