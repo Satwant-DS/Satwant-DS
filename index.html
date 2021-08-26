@@ -282,8 +282,10 @@
                             1. First of all, I tried and failed implementing Sequence model for predicting Future ICD10 Codes for indiviual patients using their historical ICD10 Vectors
                             <br>
                             2. Then, I resorted to leveraging Optum Clinical bert Model for calculating Similarity between different ICD 10 codes basis their description.                            <br>
-                            3. I got very good arrival results on sample data and then by utilizing Word2vec method, I prepared custom word embeddings for 30k ICD10 codes. Then I estimated the TFIDF scores for each ICD10-ICD10 pair by leveraging 300B claim lines where I could generalize the Doc-Item relationship.
-			    4. Finally by combining the results from text similarity, TFIDF scores and other patient level features, I was able to identify high severity claims where clinical fraud was happening.
+                            <br>
+			3. I got very good arrival results on sample data and then by utilizing Word2vec method, I prepared custom word embeddings for 30k ICD10 codes. Then I estimated the TFIDF scores for each ICD10-ICD10 pair by leveraging 300B claim lines where I could generalize the Doc-Item relationship.
+			    <br>
+			4. Once my feature space was ready, I was able to design a powerful classifier for predicting Clinical Fraud.
                         </p>
                     </div>
                     <!-- End .project-info -->
