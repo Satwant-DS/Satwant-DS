@@ -132,7 +132,7 @@
             <div data-date="August 2019 - July 2021">
                 <h3>Optum - Center for Advanced Research & Analytics</h3>
                 <h4>Data Scientist - Project Lead - <i>Client: UHC Payment Integrity Operations</i></h4>
-                <h5>Technology Stack Used: Python, PySpark, Apache Hive, MS SQL Server, RDD, H2o.ai, Jupyter, Unix, TWS, CHAID, LIME,cMS Excel</h5>
+                <h5>Technology Stack Used: Python, PySpark, Apache Hive, MS SQL Server, RDD, H2o.ai, Jupyter, Unix, TWS, CHAID, LIME,MS Excel</h5>
                 <p>
                     <strong>Key Areas of Interest: </strong> FWAE Reduction in UHC Insurance Payments Platform
                 </p>
@@ -236,8 +236,7 @@
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Non Clinical Audit Prioritization Model</h3>
-                        <h5>Technology Stack Used: Python, Apache Jena Fuseki, RDFlib, Scrapy, BeautifulSoup, RDF,
-                        fastText, rltk (Entity Linking), Javascript, HTML</h5>
+                        <h5>Technology Stack Used: PySpark, Python, Apache Hive, Unix, H2o.ai, MySQL, Apache Sqoop, LIME, CHAID Analysis, MS Excel</h5>
                         <!--<ul>
                             <li style="font-size:15px">Built a Knowledge Graph for Video Games and the System Requirements.</li>
                             <li>Designed a scoring function to do entity linking between Games extracted from different data sources.</li>
@@ -247,15 +246,13 @@
                             <li>The KG also links the online platform where the game can be found for the cheapest price.</li>
                         </ul>-->
                         <p>
-                            1. Built a Knowledge Graph for Video Games and the System Requirements.
+                            1. Built a Binary Classification GBM Model with 92% Precision using H2o Hadoop Cluster GBM Classifier Module .
                             <br>
-                            2. Designed a scoring function to do entity linking between Games extracted from different data sources.
+                            2. Setup a monthly Refresh process for recalculating lookback features for Risk & Entropy for capturing seasonal trends.
                             <br>
-                            3. Also worked on recommending games to the user based on not only the games the user likes
-                            but also based on what the user can actually run on his system. Used fastText word vectors
-                            for the recommendation systems.
+                            3. Along side predictive model, identified several high level error patterns with high TPR and deployed RPAs for those categories.
                             <br>
-                            4. The KG also links the online platform where the game can be found for the cheapest price.
+                            4. Orchestrated Tableau based Reporting Dashboard which captures both Model Performance in operational setting & also generates financial reports.
                         </p>
                         <!--<p>
                             2. Designed a scoring function to do entity linking between Games extracted from different data sources.
@@ -269,9 +266,7 @@
                             4. The KG also links the online platform where the game can be found for the cheapest price.}
                         </p> -->
 
-                        <a href="https://github.com/rijulvohra/Game-and-Requirements-KG">View Project</a>
-                        <a href="https://www.youtube.com/watch?v=wa_C4xqBmjo"> Demo on youtube </a>
-                    </div>
+                                    </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
@@ -282,15 +277,13 @@
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Clinical Fraud Risk Authentication Solution</h3>
-                        <h5>Technology Stack Used: Python, Pytorch, TorchText, Jupyter, Git </h5>
+                        <h5>Technology Stack Used: Python, Word Embedding,TFIDF, GBM, Bert Pretrained models, Gensim, Jupyter Notebook, Git, Unix, H2o, Text Similarity Algos, LSTM, Seq2Seq Model, RNN, Auto Encoders </h5>
                         <p>
-                            1. This is a self learning task to learn and implement different architectures of Seq2Seq model used for Machine Translation
+                            1. First of all, I tried and failed implementing Sequence model for predicting Future ICD10 Codes for indiviual patients using their historical ICD10 Vectors
                             <br>
-                            2. The machine translation task worked on was to convert text in German language to English
-                            <br>
-                            3. Till now, I have experimented with <strong>vanilla Seq2Seq model</strong> using LSTM, implemented
-                            <strong> Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation</strong> and <strong>
-                            used <strong>Attention</strong> for the task
+                            2. Then, I resorted to leveraging Optum Clinical bert Model for calculating Similarity between different ICD 10 codes basis their description.                            <br>
+                            3. I got very good arrival results on sample data and then by utilizing Word2vec method, I prepared custom word embeddings for 30k ICD10 codes. Then I estimated the TFIDF scores for each ICD10-ICD10 pair by leveraging 300B claim lines where I could generalize the Doc-Item relationship.
+			    4. Finally by combining the results from text similarity, TFIDF scores and other patient level features, I was able to identify high severity claims where clinical fraud was happening.
                         </p>
                         <a href="https://github.com/rijulvohra/nlp_experiments">View Project</a>
                     </div>
